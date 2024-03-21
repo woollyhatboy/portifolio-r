@@ -1,0 +1,42 @@
+:root {
+    --cor-de-fundo: #00030c;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    margin: 0; /* Adicionado para remover margens padrão do body */
+}
+
+.principal {
+    background-image: url(img/fundo3.jpg);
+    color: #fffFFF;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-gap: 10px; 
+    justify-items: center; 
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img {
+    width: 100%; 
+}
+
+.img img {
+    width: 100%; 
+    height: auto;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.img img:hover {
+    transform: scale(1.1); 
+}
+
